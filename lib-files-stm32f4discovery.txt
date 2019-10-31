@@ -1,0 +1,15 @@
+# STM32F4-Discovery_FW_V1.1.0
+
+Libraries/CMSIS/Include/
+Libraries/CMSIS/ST/STM32F4xx/Include/
+Libraries/CMSIS/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Libraries/CMSIS/ST/STM32F4xx/Source/Templates/TrueSTUDIO/startup_stm32f4xx.s
+
+Libraries/STM32F4xx_StdPeriph_Driver/inc/
+Libraries/STM32F4xx_StdPeriph_Driver/src/
+
+Project/Demonstration/TrueSTUDIO/STM32F4-Discovery_Demo/stm32_flash.ld
+Project/Demonstration/stm32f4xx_conf.h
+
+Utilities/STM32F4-Discovery/stm32f4_discovery.c
+Utilities/STM32F4-Discovery/stm32f4_discovery.h
