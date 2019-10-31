@@ -1,0 +1,13 @@
+# FreeRTOSv10.2.1
+
+FreeRTOS/Source/include/
+FreeRTOS/Source/portable/GCC/ARM_CM4F/
+FreeRTOS/Source/portable/MemMang/heap_1.c
+FreeRTOS/Source/croutine.c
+FreeRTOS/Source/event_groups.c
+FreeRTOS/Source/list.c
+FreeRTOS/Source/queue.c
+FreeRTOS/Source/stream_buffer.c
+FreeRTOS/Source/tasks.c
+FreeRTOS/Source/timers.c
+FreeRTOS/Demo/CORTEX_M4F_STM32F407ZG-SK/FreeRTOSConfig.h
