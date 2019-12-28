@@ -12,9 +12,9 @@ This project contains the files and configurations necessary to quickly get runn
 ## based on
 
 - FreeRTOSv10.2.1
-- STM32F4xx_DSP_StdPeriph_Lib_V1.8.0
+- STM32F4xx\_DSP\_StdPeriph\_Lib\_V1.8.0
     - CMSIS V4.00
-- STM32F4-Discovery_FW_V1.1.0
+- STM32F4-Discovery\_FW\_V1.1.0
 
 ## setup
 
