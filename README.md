@@ -33,6 +33,12 @@ make flash
 ```shell
 # sync lib files
 rsync -a -v --files-from=lib-files-freertos.txt ../embedded-libs/FreeRTOSv10.2.1/ lib/freertos/
-rsync -a -v --files-from=lib-files-stm32f4xx.txt ../embedded-libs/STM32F4xx_DSP_StdPeriph_Lib_V1.8.0/ lib/stm32f4xx/
 rsync -a -v --files-from=lib-files-stm32f4discovery.txt ../embedded-libs/STM32F4-Discovery_FW_V1.1.0/ lib/stm32f4discovery/
+rsync -a -v --files-from=lib-files-stm32f4xx.txt ../embedded-libs/STM32F4xx_DSP_StdPeriph_Lib_V1.8.0/ lib/stm32f4xx/
 ```
+
+## license
+
+The files under `lib/` are licensed according to their specific licenses.
+
+The rest of the project is licensed under the MIT license.
