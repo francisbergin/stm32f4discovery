@@ -48,8 +48,12 @@ add_link_options(
     -Wl,--gc-sections
 )
 
-add_executable(main.elf ${SOURCES} ${LIB_SOURCES})
+file(GLOB examples "examples/*.c")
+foreach(example ${examples})
+    get_filename_component(example_we ${example} NAME_WE)
 
-add_custom_target(main.bin ALL arm-none-eabi-objcopy -O binary main.elf main.bin DEPENDS main.elf)
-add_custom_target(size ALL arm-none-eabi-size -A main.elf DEPENDS main.elf)
-add_custom_target(flash ALL st-flash --reset write main.bin 0x8000000 DEPENDS main.bin)
+    add_executable("${example_we}.elf" ${example} ${SOURCES} ${LIB_SOURCES})
+    add_custom_target("${example_we}.bin" ALL arm-none-eabi-objcopy -O binary "${example_we}.elf" "${example_we}.bin" DEPENDS "${example_we}.elf")
+    add_custom_target("${example_we}.elf-size" ALL arm-none-eabi-size -A "${example_we}.elf" DEPENDS "${example_we}.elf")
+    add_custom_target("${example_we}.bin-flash" ALL st-flash --reset write "${example_we}.bin" 0x8000000 DEPENDS "${example_we}.bin")
+endforeach()
