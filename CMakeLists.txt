@@ -43,7 +43,7 @@ add_compile_options(
 
 add_link_options(
     ${CPU_FLAGS}
-    --specs=nosys.specs
+    # --specs=nosys.specs
     -T${LINKER_SCRIPT_OUTPUT}
     -Wl,--gc-sections
 )
