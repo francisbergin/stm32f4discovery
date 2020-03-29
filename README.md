@@ -25,9 +25,9 @@ Parts of this project are discussed here: https://berfr.me/posts/getting-started
 mkdir bin && cd bin
 cmake ..
 
-# build and run project
-make main.bin
-make flash
+# build and run example
+make blink_leds.elf
+make blink_leds.bin-flash
 ```
 
 ## other
