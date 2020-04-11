@@ -30,6 +30,14 @@ make blink_leds.elf
 make blink_leds.bin-flash
 ```
 
+## console
+
+The `console.c/console.h` code uses the following configuration:
+
+- `UART4` at `115200 bps`
+- `PC10` as `UART4_TX`
+- `PC11` as `UART4_RX`
+
 ## other
 
 ```shell
