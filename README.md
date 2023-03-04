@@ -2,7 +2,7 @@
 
 This project contains the files and configurations necessary to quickly get running with FreeRTOS on the STM32F4 Discovery board.
 
-Parts of this project are discussed here: https://berfr.me/posts/getting-started-stm32f4-freertos/.
+Parts of this project are discussed here: https://francisbergin.github.io/posts/getting-started-stm32f4-freertos/.
 
 ## dependencies
 
